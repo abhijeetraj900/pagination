@@ -57,11 +57,11 @@ const PaginationTable = () => {
         </tbody>
       </table>
       <div style={styles.pagination}>
-        <button style={styles.button} onClick={handlePrevious} disabled={currentPage === 1}>
+        <button style={styles.button} onClick={handlePrevious} >
           Previous
         </button>
         <span style={styles.pageNumber}>{currentPage}</span>
-        <button style={styles.button} onClick={handleNext} disabled={currentPage === totalPages}>
+        <button style={styles.button} onClick={handleNext} >
           Next
         </button>
       </div>
